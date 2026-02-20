@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+#perfil {
+    border-radius: 50%;
+    object-fit: cover;
+}
+* {
+    margin: 0;
+
+header {
+    background-color: #1b89ff;
+    display: flex;
+    align-items: center;      
+    padding: 10px 30px;       
+}
+header .botao {
+    margin-left: 20px;        
+    margin-top: -5px;         
+}
+div {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #1a237e, #64b5f6); /* degradê azul escuro para claro */
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+div:hover {
+    background-color: #315f86;
+    box-shadow: 0 0 16px 4px rgba(255,255,255,0.7); /* Aura branca */
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+footer {
+    background-color: #1b89ff;
+}
+footer form {
+    text-align: left;
+    margin-left: 1200px;
+    margin-top: -40px;
+}
+p, h1, h2, h3, h4, h5, h6, span, label, li {
+    margin: 5px;
+}
