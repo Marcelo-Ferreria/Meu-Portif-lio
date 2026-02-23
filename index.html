@@ -8,9 +8,10 @@
 </head>
 <body>
     <header class="navbar">
-        <nav>
+        <nav class="container nav-wrap">
+            <a href="index.html" class="brand">Marcelo <span>Barbosa</span></a>
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="ativo">Início</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="habilidades.html">Habilidades</a></li>
@@ -19,23 +20,65 @@
         </nav>
     </header>
 
-    <main class="intro">
-        <div class="texto">
-            <h1>Olá, eu sou Marcelo Ferreira Barbosa</h1>
-            <p>Sou estudante de Ciências da Computação na Universidade Tiradentes, onde estou desenvolvendo minhas habilidades e conhecimentos na área de tecnologia e inovação.</p>
-            <div class="botoes">
-                <button class="botao">Download do Currículo</button>
-                <button class="botao">Mais sobre mim</button>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">Portfólio Profissional e Acadêmico</span>
+                    <h1>Marcelo Ferreira Barbosa</h1>
+                    <p class="lead">Estudante de Ciências da Computação com foco em desenvolvimento web, interfaces responsivas e construção de soluções práticas. Este portfólio reúne meus principais projetos, habilidades técnicas e trajetória de aprendizado.</p>
+                    <div class="actions">
+                        <a class="botao botao-principal" href="portfolio.html">Ver Projetos</a>
+                        <a class="botao botao-secundario" href="sobre.html">Conhecer Perfil</a>
+                        <a class="botao botao-secundario" href="mailto:mmmarcelinho11@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Curr%C3%ADculo">Solicitar Currículo</a>
+                    </div>
+
+                    <div class="stats">
+                        <article class="stat-card">
+                            <strong>5+</strong>
+                            <span>Projetos publicados</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>4</strong>
+                            <span>Tecnologias principais</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>2026</strong>
+                            <span>Evolução contínua</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="imagem-perfil">
+                    <img src="assets/WhatsApp Image 2025-11-11 at 10.39.16 SEM PLANO DE FUNDO.JPG" alt="Foto de perfil de Marcelo Ferreira Barbosa">
+                </div>
             </div>
-        </div>
-        <div class="imagem-perfil">
-            <img src="assets/WhatsApp Image 2025-11-11 at 10.39.16 SEM PLANO DE FUNDO.JPG" alt="Imagem de perfil (adicione depois)">
-        </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Resumo Profissional</h2>
+                    <p>Atuação em projetos acadêmicos e pessoais com ênfase em estruturação semântica com HTML, estilização avançada com CSS e interatividade com JavaScript.</p>
+                </div>
+                <article class="card">
+                    <p>Meu objetivo é iniciar e consolidar carreira na área de tecnologia, contribuindo com desenvolvimento de sistemas web funcionais, claros e de fácil manutenção.</p>
+                    <p>Busco oportunidades para aplicar conhecimentos técnicos em ambientes profissionais, aprendendo com desafios reais e gerando impacto positivo para equipes e usuários.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>© 2025 Marcelo Ferreira Barbosa. Todos os direitos reservados.</p>
-        <p>LinkedIn | E-mail: mmmarcelinho11@gmail.com | Redes Sociais (Instagram: marcelo_18) | Telefone: (79) 99648-3500</p>
+        <div class="container footer-wrap">
+            <p>© 2026 Marcelo Ferreira Barbosa. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="mailto:mmmarcelinho11@gmail.com">E-mail</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/marcelo_18" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:+5579996483500">Telefone</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

@@ -8,7 +8,8 @@
 </head>
 <body>
     <header class="navbar">
-        <nav>
+        <nav class="container nav-wrap">
+            <a href="index.html" class="brand">Marcelo <span>Barbosa</span></a>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
@@ -19,70 +20,90 @@
         </nav>
     </header>
 
-    <section class="conteudo">
-        <h2>Meus Certificados / Projetos</h2>
-        <p>Explique o que são as imagens abaixo.</p>
-
-        <div class="galeria">
-            <!-- Prioridade 1: Sites sobre Fórmula 1 -->
-            <div class="item">
-                <a href="projetos/Sites%20com%20HTML%20e%20CSS%20Sobre%20F%C3%B3rmula%201/Sites%20com%20HTML%20e%20CSS/index.html" target="_blank">
-                    <img src="https://i.pinimg.com/736x/af/5e/a1/af5ea1a9bead7147146740e69f1bbdfb.jpg" alt="Fórmula 1">
-                    <h3>Sites: Fórmula 1</h3>
-                    <p>Coleção de páginas informativas sobre as scuderias (Ferrari, Red Bull, Mercedes).</p>
-                </a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow">Projetos</span>
+                <h1>Portfólio</h1>
+                <p class="lead">Seleção de trabalhos que demonstram minha evolução técnica em interfaces web, estrutura de páginas, interatividade e organização de código.</p>
             </div>
+        </section>
 
-            <!-- Prioridade 2: Jornal online -->
-            <div class="item">
-                <a href="projetos/Jornal%20online/Jornal%20online/Jornal%20online/index.html" target="_blank">
-                    <img src="projetos/Jornal%20online/Jornal%20online/Jornal%20online/Imagens/webb-telescope-offers-1.jpg" alt="Jornal online">
-                    <h3>Tecnograma — Jornal online</h3>
-                    <p>Site de notícias com layout de jornal, artigos e seção de curiosidades.</p>
-                </a>
+        <section class="section">
+            <div class="container galeria">
+                <article class="item">
+                    <a href="projetos/Sites%20com%20HTML%20e%20CSS%20Sobre%20F%C3%B3rmula%201/Sites%20com%20HTML%20e%20CSS/index.html" target="_blank">
+                        <img src="https://i.pinimg.com/736x/af/5e/a1/af5ea1a9bead7147146740e69f1bbdfb.jpg" alt="Projeto de site sobre Fórmula 1">
+                        <div class="item-body">
+                            <h3>Sites: Fórmula 1</h3>
+                            <p>Coleção de páginas informativas sobre escuderias como Ferrari, Red Bull e Mercedes.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item">
+                    <a href="projetos/Jornal%20online/Jornal%20online/Jornal%20online/index.html" target="_blank">
+                        <img src="projetos/Jornal%20online/Jornal%20online/Jornal%20online/Imagens/webb-telescope-offers-1.jpg" alt="Projeto Tecnograma Jornal online">
+                        <div class="item-body">
+                            <h3>Tecnograma — Jornal Online</h3>
+                            <p>Projeto de site jornalístico com organização de notícias e páginas de conteúdo.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item">
+                    <a href="https://med-connect-19.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img1.png" alt="Projeto externo Med-Connect">
+                        <div class="item-body">
+                            <h3>Med-Connect</h3>
+                            <p>Aplicação web externa publicada, com foco em usabilidade e experiência digital.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item">
+                    <a href="projetos/Projeto%20da%20calculadora/index.html" target="_blank">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='400' height='300'><rect x='2' y='1' width='20' height='22' rx='2' fill='%230d0d0d' stroke='%234f8cff' stroke-width='1.2'/><rect x='7' y='4' width='10' height='3' rx='0.5' fill='%234f8cff'/><g fill='%23ffffff'><rect x='6' y='9' width='2' height='2'/><rect x='9' y='9' width='2' height='2'/><rect x='12' y='9' width='2' height='2'/><rect x='6' y='12' width='2' height='2'/><rect x='9' y='12' width='2' height='2'/><rect x='12' y='12' width='2' height='2'/><rect x='6' y='15' width='8' height='2' rx='0.3'/></g></svg>" alt="Projeto de calculadora em JavaScript">
+                        <div class="item-body">
+                            <h3>Calculadora</h3>
+                            <p>Projeto interativo com operações matemáticas e manipulação de eventos em JavaScript.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item">
+                    <a href="projetos/Projeto%20da%20Lampada/Lampada%20-%20Atividade/index.html" target="_blank">
+                        <img src="projetos/Projeto%20da%20Lampada/Lampada%20-%20Atividade/assets/lamp_off.png" alt="Projeto de lâmpada com interação">
+                        <div class="item-body">
+                            <h3>Projeto da Lâmpada</h3>
+                            <p>Atividade prática de lógica condicional para ligar e desligar elementos visuais.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item">
+                    <a href="projetos/Projeto%20dos%20Carros%20na%20estrada/index.html" target="_blank">
+                        <img src="projetos/Projeto%20dos%20Carros%20na%20estrada/assets/img/track.gif" alt="Projeto carros na estrada">
+                        <div class="item-body">
+                            <h3>Carros na Estrada</h3>
+                            <p>Projeto com animação e controles de movimento para treinar comportamento dinâmico na interface.</p>
+                        </div>
+                    </a>
+                </article>
             </div>
-
-            <!-- Projeto externo solicitado -->
-            <div class="item">
-                <a href="https://med-connect-19.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img1.png" alt="Med-Connect (externo)">
-                    <h3>Med-Connect (externo)</h3>
-                    <p>Aplicação web hospedada (link externo). Acesse para ver o projeto live.</p>
-                </a>
-            </div>
-
-            <!-- Outros projetos encontrados na pasta 'projetos' -->
-            <div class="item">
-                <a href="projetos/Projeto%20da%20calculadora/index.html" target="_blank">
-                    <!-- SVG data-URI usado como miniatura local para a calculadora -->
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='400' height='300'><rect x='2' y='1' width='20' height='22' rx='2' fill='%230d0d0d' stroke='%23ff4c4c' stroke-width='1.2'/><rect x='7' y='4' width='10' height='3' rx='0.5' fill='%23ff4c4c'/><g fill='%23ffffff'><rect x='6' y='9' width='2' height='2'/><rect x='9' y='9' width='2' height='2'/><rect x='12' y='9' width='2' height='2'/><rect x='6' y='12' width='2' height='2'/><rect x='9' y='12' width='2' height='2'/><rect x='12' y='12' width='2' height='2'/><rect x='6' y='15' width='8' height='2' rx='0.3'/></g></svg>" alt="Calculadora (miniatura)">
-                    <h3>Calculadora</h3>
-                    <p>Projeto de calculadora com interação em JavaScript.</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="projetos/Projeto%20da%20Lampada/Lampada%20-%20Atividade/index.html" target="_blank">
-                    <img src="projetos/Projeto%20da%20Lampada/Lampada%20-%20Atividade/assets/lamp_off.png" alt="Lâmpada">
-                    <h3>Lâmpada (interatividade)</h3>
-                    <p>Atividade que liga/desliga uma lâmpada usando JavaScript.</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="projetos/Projeto%20dos%20Carros%20na%20estrada/index.html" target="_blank">
-                    <img src="projetos/Projeto%20dos%20Carros%20na%20estrada/assets/img/track.gif" alt="Carros na estrada">
-                    <h3>Carros na estrada</h3>
-                    <p>Animação/interação com carros e controles de acelerar/desacelerar.</p>
-                </a>
-            </div>
-
-            <!-- Se houver mais projetos na pasta 'projetos', você pode adicioná-los aqui seguindo o mesmo padrão -->
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>LinkedIn | E-mail: mmmarcelinho11@gmail.com | Redes Sociais (Instagram: marcelo_18) | Telefone: (79) 99648-3500</p>
+        <div class="container footer-wrap">
+            <p>© 2026 Marcelo Ferreira Barbosa. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="mailto:mmmarcelinho11@gmail.com">E-mail</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/marcelo_18" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:+5579996483500">Telefone</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

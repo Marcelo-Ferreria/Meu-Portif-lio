@@ -8,7 +8,8 @@
 </head>
 <body>
     <header class="navbar">
-        <nav>
+        <nav class="container nav-wrap">
+            <a href="index.html" class="brand">Marcelo <span>Barbosa</span></a>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
@@ -19,20 +20,56 @@
         </nav>
     </header>
 
-    <section class="conteudo">
-        <h2>Contato</h2>
-        <p>Deixe aqui instruções ou formulário para contato.</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow">Contato Profissional</span>
+                <h1>Vamos Conversar</h1>
+                <p class="lead">Estou disponível para oportunidades acadêmicas, estágios, networking e colaboração em projetos de tecnologia.</p>
+            </div>
+        </section>
 
-        <form class="form-contato">
-            <input type="text" placeholder="Seu nome">
-            <input type="email" placeholder="Seu e-mail">
-            <textarea placeholder="Sua mensagem"></textarea>
-            <button class="botao">Enviar (esboço)</button>
-        </form>
-    </section>
+        <section class="section">
+            <div class="container contato-grid">
+                <div class="contact-list">
+                    <article class="contact-item">
+                        <strong>E-mail</strong>
+                        <a href="mailto:mmmarcelinho11@gmail.com">mmmarcelinho11@gmail.com</a>
+                    </article>
+                    <article class="contact-item">
+                        <strong>Telefone</strong>
+                        <a href="tel:+5579996483500">(79) 99648-3500</a>
+                    </article>
+                    <article class="contact-item">
+                        <strong>Instagram</strong>
+                        <a href="https://www.instagram.com/marcelo_18" target="_blank" rel="noopener noreferrer">@marcelo_18</a>
+                    </article>
+                    <article class="contact-item">
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Perfil profissional</a>
+                    </article>
+                </div>
+
+                <form class="form-contato" action="mailto:mmmarcelinho11@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <button class="botao botao-principal" type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>LinkedIn | E-mail: mmmarcelinho11@gmail.com | Redes Sociais (Instagram: marcelo_18) | Telefone: (79) 99648-3500</p>
+        <div class="container footer-wrap">
+            <p>© 2026 Marcelo Ferreira Barbosa. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="mailto:mmmarcelinho11@gmail.com">E-mail</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/marcelo_18" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:+5579996483500">Telefone</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

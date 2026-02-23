@@ -8,7 +8,8 @@
 </head>
 <body>
     <header class="navbar">
-        <nav>
+        <nav class="container nav-wrap">
+            <a href="index.html" class="brand">Marcelo <span>Barbosa</span></a>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
@@ -19,34 +20,66 @@
         </nav>
     </header>
 
-    <section class="conteudo">
-        <h2>Habilidades</h2>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow">Competências Técnicas</span>
+                <h1>Habilidades</h1>
+                <p class="lead">Tecnologias que fazem parte da minha formação e da construção dos meus projetos acadêmicos e pessoais.</p>
+            </div>
+        </section>
 
-        <div class="lista-habilidades">
-            <div class="habilidade">
-                <img src="assets/HTML5.png" alt="HTML5">
-                <div class="texto-habilidade"><strong>HTML:</strong> Tenho um bom domínio de HTML, sendo a base principal dos meus estudos em desenvolvimento web. Utilizo essa linguagem para estruturar páginas de forma semântica e organizada, garantindo que o conteúdo seja acessível e bem interpretado pelos navegadores. Busco sempre seguir boas práticas de marcação e organização do código, mantendo um padrão limpo e de fácil manutenção.</div>
+        <section class="section">
+            <div class="container skills-grid">
+                <article class="skill">
+                    <div class="skill-top">
+                        <img src="assets/HTML5.png" alt="HTML5">
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>Estruturação semântica, organização de conteúdo e boas práticas para acessibilidade e manutenção.</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                </article>
+
+                <article class="skill">
+                    <div class="skill-top">
+                        <img src="assets/CSS.png" alt="CSS3">
+                        <h3>CSS3</h3>
+                    </div>
+                    <p>Criação de layouts responsivos com Flexbox e Grid, foco em estética, consistência visual e usabilidade.</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+                </article>
+
+                <article class="skill">
+                    <div class="skill-top">
+                        <img src="assets/javascript.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>Interatividade com DOM, eventos e desenvolvimento de funcionalidades para melhorar a experiência do usuário.</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+                </article>
+
+                <article class="skill">
+                    <div class="skill-top">
+                        <img src="assets/REACT.png" alt="React">
+                        <h3>React</h3>
+                    </div>
+                    <p>Noções iniciais de componentização, reaproveitamento de interface e construção de aplicações modulares.</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 45%;"></div></div>
+                </article>
             </div>
-            <br>
-            <div class="habilidade">
-                <img src="assets/CSS.png" alt="CSS">
-                <div class="texto-habilidade"><strong>CSS:</strong> O CSS é uma das minhas maiores áreas de interesse e onde concentro grande parte do meu aprendizado atualmente. Com ele, desenvolvo o design e o layout das páginas, trabalhando com responsividade, posicionamento de elementos, transições e animações para criar interfaces modernas e agradáveis. Também estou explorando o uso de Flexbox e Grid Layout, que tornam o processo de estilização mais eficiente e flexível.</div>
-            </div>
-            <br>
-            <div class="habilidade">
-                <img src="assets/javascript.png" alt="JavaScript">
-                <div class="texto-habilidade"><strong>JavaScript:</strong> Tenho conhecimentos básicos em JavaScript, que utilizo para adicionar interatividade e dinamismo às páginas web. Estou aprendendo a manipular o DOM, trabalhar com eventos e criar funcionalidades simples que melhorem a experiência do usuário. Vejo o JavaScript como uma ferramenta essencial para o meu crescimento como desenvolvedor e continuo me aprofundando nessa linguagem.</div>
-            </div>
-            <br>
-            <div class="habilidade">
-                <img src="assets/REACT.png" alt="React">
-                <div class="texto-habilidade"><strong>REACT:</strong> Possuo noções iniciais em React, framework que venho estudando para compreender melhor o desenvolvimento de interfaces mais dinâmicas e modulares. Já consigo desenvolver pequenas partes de sistemas, como componentes simples e interação entre eles. Embora ainda esteja em fase de aprendizado, tenho interesse em evoluir nessa tecnologia e aplicá-la em projetos mais complexos futuramente.</div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>LinkedIn | E-mail: mmmarcelinho11@gmail.com | Redes Sociais (Instagram: marcelo_18) | Telefone: (79) 99648-3500</p>
+        <div class="container footer-wrap">
+            <p>© 2026 Marcelo Ferreira Barbosa. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="mailto:mmmarcelinho11@gmail.com">E-mail</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/marcelo_18" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:+5579996483500">Telefone</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

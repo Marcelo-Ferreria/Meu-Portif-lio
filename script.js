@@ -1,5 +1,5 @@
-document.querySelectorAll('.botao').forEach(btn => {
-    btn.addEventListener('click', () => {
-        alert('Este botão é apenas um esboço.');
-    });
+document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+    if (!link.rel.includes('noopener')) {
+        link.rel = `${link.rel} noopener noreferrer`.trim();
+    }
 });
