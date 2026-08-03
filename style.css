@@ -24,6 +24,15 @@ body {
     line-height: 1.6;
 }
 
+/* Justificar todos os textos por padrão */
+body {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
 a {
     color: inherit;
     text-decoration: none;
