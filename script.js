@@ -4,6 +4,41 @@ document.querySelectorAll('a[target="_blank"]').forEach((link) => {
     }
 });
 
+document.body.classList.add('js-enabled');
+
+const revealSelectors = [
+    '.hero-grid',
+    '.section-head',
+    '.card',
+    '.galeria .item',
+    '.skills-grid .skill',
+    '.contact-list .contact-item',
+    '.footer-wrap'
+];
+
+const revealTargets = document.querySelectorAll(revealSelectors.join(', '));
+
+revealTargets.forEach((element, index) => {
+    element.classList.add('reveal');
+    element.style.setProperty('--reveal-delay', `${Math.min(index * 30, 150)}ms`);
+});
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.18,
+    rootMargin: '0px 0px -8% 0px'
+});
+
+revealTargets.forEach((element) => {
+    revealObserver.observe(element);
+});
+
 const contactOverlay = document.createElement('div');
 contactOverlay.className = 'contact-overlay';
 contactOverlay.innerHTML = `
