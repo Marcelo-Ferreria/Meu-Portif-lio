@@ -1,0 +1,30 @@
+# Dependências e ambientes locais
+node_modules/
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Arquivos temporários e gerados
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Backups e arquivos locais de desenvolvimento
+*.orig
+*.rej
+*.local
+
+# Editor e IDE
+.vscode/
+.idea/
+
+# Artefatos de build e deploy
+dist/
+build/
+coverage/

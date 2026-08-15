@@ -1,7 +1,34 @@
-document.querySelectorAll('a[target="_blank"]').forEach((link) => {
-    if (!link.rel.includes('noopener')) {
-        link.rel = `${link.rel} noopener noreferrer`.trim();
+const SAFE_EXTERNAL_PROTOCOLS = new Set(['http:', 'https:', 'mailto:']);
+
+const applySafeLinkAttributes = (link) => {
+    if (!link || !link.href) {
+        return;
     }
+
+    try {
+        const url = new URL(link.href, window.location.href);
+        const isAllowed = SAFE_EXTERNAL_PROTOCOLS.has(url.protocol);
+
+        if (!isAllowed) {
+            link.addEventListener('click', (event) => event.preventDefault(), { once: true });
+            return;
+        }
+
+        const relTokens = new Set((link.rel || '').split(/\s+/).filter(Boolean));
+        ['noopener', 'noreferrer'].forEach((token) => relTokens.add(token));
+        link.rel = Array.from(relTokens).join(' ');
+        link.referrerPolicy = 'no-referrer';
+    } catch {
+        link.addEventListener('click', (event) => event.preventDefault(), { once: true });
+    }
+};
+
+document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+    applySafeLinkAttributes(link);
+});
+
+document.querySelectorAll('a[href^="http"], a[href^="https"], a[href^="mailto:"]').forEach((link) => {
+    applySafeLinkAttributes(link);
 });
 
 document.body.classList.add('js-enabled');
